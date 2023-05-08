@@ -3,3 +3,4 @@ torchvision
 matplotlib
 Pillow
 streamlit
+gdown

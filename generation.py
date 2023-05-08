@@ -56,7 +56,7 @@ def predict(img, show=False):
     # show == True => выводим изображение и делаем title
 
     # Загрузка моделей
-    llm_model = torch.load('model.pt')
+    llm_model = torch.load('models/model.pt')
     model = tv.models.resnet34(pretrained=True)
     model.fc = torch.nn.Identity()  # заменяем полносвязный слой на слой-тождественность
 
