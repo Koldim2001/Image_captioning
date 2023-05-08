@@ -26,11 +26,11 @@
 
 ---
 ## Структура проекта:
-Подробное описание процесса предподготовки изображений и тестовых описаний для обучения сетей, обучение сети с архитектурой LSTM + ResNet34, а так же реализация инференции (inference) данной модели при подаче нового незнакомого изображения представлены в jupiter notebook __image_captioning_no_attention.ipynb__    <br>
+Подробное описание процесса предподготовки изображений и тестовых описаний для обучения сетей, обучение сети с архитектурой LSTM + ResNet34, а так же реализация инференции (inference) данной модели при подаче нового незнакомого изображения представлены в jupiter notebook [__image_captioning_no_attention.ipynb__](https://nbviewer.org/github/Koldim2001/Image_captioning/blob/main/image_captioning_no_attention.ipynb)    <br>
 
-Обучение сети с архитектурой LSTM + MobileNet + Soft Attention, а так же реализация инференции (inference) данной модели при подаче нового незнакомого изображения представлены в jupiter notebook __image_captioning_with_attention.ipynb__    <br>
+Обучение сети с архитектурой LSTM + MobileNet + Soft Attention, а так же реализация инференции (inference) данной модели при подаче нового незнакомого изображения представлены в jupiter notebook [__image_captioning_with_attention.ipynb__](https://nbviewer.org/github/Koldim2001/Image_captioning/blob/main/image_captioning_with_attention.ipynb)<br>
 
-Вэб сервис я реализовал с помощью веб-фреймворка Streamlit, предназначенного для исследователей данных для простого развертывания моделей. Скрипт для запуска на localhost вэб приложения - __web.py__
+Вэб сервис я реализовал с помощью веб-фреймворка Streamlit, предназначенного для исследователей данных для простого развертывания моделей. Скрипт для запуска на localhost вэб приложения - [__web.py__](https://github.com/Koldim2001/Image_captioning/blob/main/web.py)
 
 Помимо главных описанных файлов репозитория так же имеются .py файлы, в которых реализованы функции по инференсу моделей и загрузке обученных весов с моего Google Drive. Так же имеется файл с расширением .pkl, в котором сохранен полученный словарь в процессе предобраюотки текстовых описаний (NLP).
 
@@ -59,12 +59,13 @@ streamlit run web.py --server.port 80
 
 _PS: Для корректной работы streamlit веб-фреймворка может потребоваться наличие python версии не ниже 3.9.12 (то есть новее) .<br><br>_
 
-
- <div style="text-align:center;">
-  <img src="https://drive.google.com/uc?id=1E77zIF1yq9m6F6Q-vtQRCjWp-6v3UdRX" alt="bot" width=315" height="495">
   <div style="text-align:center;">
-  <img src="https://drive.google.com/uc?id=1q_MagU2P5S1jLY5HaAy5MAUEPF2ys2X0" alt="bot" width=315" height="495">
-    <img src="https://drive.google.com/uc?id=1CUXAacC1t8An8UyzDTMtsgfdjD6BuQ67" alt="bot" width=315" height="495">
+  <img src="https://drive.google.com/uc?id=1q_MagU2P5S1jLY5HaAy5MAUEPF2ys2X0" alt="bot" width=410" height="645">
+    <img src="https://drive.google.com/uc?id=1CUXAacC1t8An8UyzDTMtsgfdjD6BuQ67" alt="bot" width=410" height="645">
+ <div style="text-align:center;">
+  <img src="https://drive.google.com/uc?id=1E77zIF1yq9m6F6Q-vtQRCjWp-6v3UdRX" alt="bot" width=410" height="645">
+ <img src="https://drive.google.com/uc?id=1qk-LqR-LO00B34jIBwvWNB5Fz3QWgFVz" alt="bot" width=410" height="645">
+
 
   
   Рисунок 3 - Примеры работы веб-приложения
