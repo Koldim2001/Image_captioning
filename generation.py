@@ -54,9 +54,10 @@ class LLMModel(torch.nn.Module):
 
 def predict(img, show=False):
     # show == True => выводим изображение и делаем title
-
+    
+    device = torch.device("cuda:0") if torch.cuda.is_available() else torch.device("cpu")
     # Загрузка моделей
-    llm_model = torch.load('models/model.pt')
+    llm_model = torch.load('models/model.pt', map_location=torch.device(device))
     model = tv.models.resnet34(pretrained=True)
     model.fc = torch.nn.Identity()  # заменяем полносвязный слой на слой-тождественность
 

@@ -141,10 +141,11 @@ def predict_att(img):
                        T.ToTensor(), 
                        T.Normalize(mean=[0.485, 0.456, 0.406],
                                  std=[0.229, 0.224, 0.225])])
-
-    llm_model = torch.load('models/model_attention.pt')
-    model = tv.models.mobilenet_v3_small(pretrained=True)
+    
     device = torch.device("cuda:0") if torch.cuda.is_available() else torch.device("cpu")
+    llm_model = torch.load('models/model_attention.pt', map_location=torch.device(device))
+    model = tv.models.mobilenet_v3_small(pretrained=True)
+
     word_to_id = {word: id for id, word in enumerate(words)}
     llm_model.to(device)
     model.to(device)
