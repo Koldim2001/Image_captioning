@@ -10,15 +10,18 @@
 
  <div style="text-align:center;">
   <img src="https://drive.google.com/uc?id=1XUfYNlfE0j-sCWgir84GyjMzDsSzUbUR" alt="bot" width=660" height="435">
+                                                                                                              
   Рисунок 1 - Архитектура модели LSTM + ResNet
 </div>
-
+                                                                                            
+                                                                                                               
 <br>
 Для решения этих описанных ранее проблем применяется механизм внимания (attention mechanism). В случае image captioning, механизм внимания позволяет сети "обращаться" к различным частям изображения на каждом шаге генерации текста. Таким образом контекст самого изображения не теряется со временем генерации. А представленный  механизм soft attention позволяет сети фокусироваться на разных частях изображения с разной степенью "важности" на каждом шаге генерации, что значительно увеличивает качество финального описания. Так же такие теста по большей части являются полее содержательныеми, а главное оконченными (В случае первой модели зачастую происходит зацикливание содердания из-за потери контекста).
 
  <div style="text-align:center;">
   <img src="https://drive.google.com/uc?id=1ARHvm2TAWAqY8sp0bV29BGgjG3bFqYmQ" alt="bot" width=790" height="430">
-  Рисунок 2 - Архитектура модели LSTM + MobileNet + Soft Attention
+  
+ Рисунок 2 - Архитектура модели LSTM + MobileNet + Soft Attention
 </div>
 
 ---
@@ -58,10 +61,11 @@ _PS: Для корректной работы streamlit веб-фреймвор�
 
 
  <div style="text-align:center;">
-  <img src="https://drive.google.com/uc?id=1E77zIF1yq9m6F6Q-vtQRCjWp-6v3UdRX" alt="bot" width=350" height="550">
+  <img src="https://drive.google.com/uc?id=1E77zIF1yq9m6F6Q-vtQRCjWp-6v3UdRX" alt="bot" width=315" height="495">
   <div style="text-align:center;">
-  <img src="https://drive.google.com/uc?id=1q_MagU2P5S1jLY5HaAy5MAUEPF2ys2X0" alt="bot" width=350" height="550">
-    <img src="https://drive.google.com/uc?id=1CUXAacC1t8An8UyzDTMtsgfdjD6BuQ67" alt="bot" width=350" height="550">
+  <img src="https://drive.google.com/uc?id=1q_MagU2P5S1jLY5HaAy5MAUEPF2ys2X0" alt="bot" width=315" height="495">
+    <img src="https://drive.google.com/uc?id=1CUXAacC1t8An8UyzDTMtsgfdjD6BuQ67" alt="bot" width=315" height="495">
 
+  
   Рисунок 3 - Примеры работы веб-приложения
 </div>
