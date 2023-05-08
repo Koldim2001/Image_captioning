@@ -11,7 +11,7 @@
  <div style="text-align:center;">
   <img src="https://drive.google.com/uc?id=1XUfYNlfE0j-sCWgir84GyjMzDsSzUbUR" alt="bot" width=660" height="435">
                                                                                                               
-  Рисунок 1 - Архитектура модели LSTM + ResNet
+  __Рисунок 1 - Архитектура модели LSTM + ResNet__
 </div>
                                                                                             
                                                                                                                
@@ -21,14 +21,14 @@
  <div style="text-align:center;">
   <img src="https://drive.google.com/uc?id=1ARHvm2TAWAqY8sp0bV29BGgjG3bFqYmQ" alt="bot" width=790" height="430">
   
- Рисунок 2 - Архитектура модели LSTM + MobileNet + Soft Attention
+ __Рисунок 2 - Архитектура модели LSTM + MobileNet + Soft Attention__
 </div>
 
 ---
 ## Структура проекта:
-Подробное описание процесса предподготовки изображений и тестовых описаний для обучения сетей, обучение сети с архитектурой LSTM + ResNet34, а так же реализация инференции (inference) данной модели при подаче нового незнакомого изображения представлены в jupiter notebook [__image_captioning_no_attention.ipynb__](https://nbviewer.org/github/Koldim2001/Image_captioning/blob/main/image_captioning_no_attention.ipynb)    <br>
+Подробное описание процесса предподготовки изображений и тестовых описаний для обучения сетей, обучение сети с архитектурой LSTM + ResNet34, а так же реализация инференции (inference) данной модели при подаче нового незнакомого изображения представлены в jupiter notebook - [__image_captioning_no_attention.ipynb__](https://nbviewer.org/github/Koldim2001/Image_captioning/blob/main/image_captioning_no_attention.ipynb)    <br>
 
-Обучение сети с архитектурой LSTM + MobileNet + Soft Attention, а так же реализация инференции (inference) данной модели при подаче нового незнакомого изображения представлены в jupiter notebook [__image_captioning_with_attention.ipynb__](https://nbviewer.org/github/Koldim2001/Image_captioning/blob/main/image_captioning_with_attention.ipynb)<br>
+Обучение сети с архитектурой LSTM + MobileNet + Soft Attention, а так же реализация инференции (inference) данной модели при подаче нового незнакомого изображения представлены в jupiter notebook - [__image_captioning_with_attention.ipynb__](https://nbviewer.org/github/Koldim2001/Image_captioning/blob/main/image_captioning_with_attention.ipynb)<br>
 
 Вэб сервис я реализовал с помощью веб-фреймворка Streamlit, предназначенного для исследователей данных для простого развертывания моделей. Скрипт для запуска на localhost вэб приложения - [__web.py__](https://github.com/Koldim2001/Image_captioning/blob/main/web.py)
 
@@ -68,5 +68,5 @@ _PS: Для корректной работы streamlit веб-фреймвор�
 
 
   
-  Рисунок 3 - Примеры работы веб-приложения
+  __Рисунок 3 - Примеры работы веб-приложения__
 </div>
