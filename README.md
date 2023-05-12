@@ -9,7 +9,7 @@
  Классический подход к image captioning с использованием RNN (например, LSTM - Long Short-Term Memory) имеет некоторые проблемы. Одна из основных проблем - это то, что RNN имеет фиксированную длину контекста и обрабатывает информацию последовательно. Это означает, что RNN видит только небольшой контекст, поэтому при генерации слов часто забывет старые результаты своей генерации. Так же такой подход не позволяет полностью учесть контекст изображения на каждом этапе генерации. В данном случае выделенные фичи изображения с помощью CNN лишь единожды подаются на вход LSTM блока, так что со временем генерация полностью теряет память о исходном изображении и начинает "додумывать самостоятельно".
 
  <div style="text-align:center;">
-  <img src="https://drive.google.com/uc?id=1XUfYNlfE0j-sCWgir84GyjMzDsSzUbUR" alt="bot" width=660" height="435">
+  <img src="https://drive.google.com/uc?id=1XUfYNlfE0j-sCWgir84GyjMzDsSzUbUR" alt="1st model" width=660" height="435">
                                                                                                               
   __Рисунок 1 - Архитектура модели LSTM + ResNet__
 </div>
@@ -19,7 +19,7 @@
 Для решения этих описанных ранее проблем применяется механизм внимания (attention mechanism). В случае image captioning, механизм внимания позволяет сети "обращаться" к различным частям изображения на каждом шаге генерации текста. Таким образом контекст самого изображения не теряется со временем генерации. А представленный механизм soft attention позволяет сети фокусироваться на разных частях изображения с разной степенью "важности" на каждом шаге генерации, что значительно увеличивает качество финального описания. Так же такие текста по большей части являются полее содержательными, а главное оконченными (В случае первой модели зачастую происходит зацикливание содердания из-за потери контекста).
 
  <div style="text-align:center;">
-  <img src="https://drive.google.com/uc?id=1ARHvm2TAWAqY8sp0bV29BGgjG3bFqYmQ" alt="bot" width=790" height="430">
+  <img src="https://drive.google.com/uc?id=1ARHvm2TAWAqY8sp0bV29BGgjG3bFqYmQ" alt="2nd model" width=790" height="425">
   
  __Рисунок 2 - Архитектура модели LSTM + MobileNet + Soft Attention__
 </div>
@@ -60,11 +60,11 @@ streamlit run web.py --server.port 80
 _PS: Для корректной работы streamlit веб-фреймворка может потребоваться наличие python версии не ниже 3.9.12 (то есть новее) .<br><br>_
 
   <div style="text-align:center;">
-  <img src="https://drive.google.com/uc?id=1q_MagU2P5S1jLY5HaAy5MAUEPF2ys2X0" alt="bot" width=410" height="645">
-    <img src="https://drive.google.com/uc?id=1CUXAacC1t8An8UyzDTMtsgfdjD6BuQ67" alt="bot" width=410" height="645">
+  <img src="https://drive.google.com/uc?id=1q_MagU2P5S1jLY5HaAy5MAUEPF2ys2X0" alt="web" width=410" height="645">
+    <img src="https://drive.google.com/uc?id=1CUXAacC1t8An8UyzDTMtsgfdjD6BuQ67" alt="web" width=410" height="645">
  <div style="text-align:center;">
-  <img src="https://drive.google.com/uc?id=1E77zIF1yq9m6F6Q-vtQRCjWp-6v3UdRX" alt="bot" width=410" height="645">
- <img src="https://drive.google.com/uc?id=1qk-LqR-LO00B34jIBwvWNB5Fz3QWgFVz" alt="bot" width=410" height="645">
+  <img src="https://drive.google.com/uc?id=1E77zIF1yq9m6F6Q-vtQRCjWp-6v3UdRX" alt="web" width=410" height="645">
+ <img src="https://drive.google.com/uc?id=1qk-LqR-LO00B34jIBwvWNB5Fz3QWgFVz" alt="web" width=410" height="645">
 
 
   
